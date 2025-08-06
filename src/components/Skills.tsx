@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code, Database, Brain, Users, Wrench } from 'lucide-react';
+import { Code, Brain, Users, Wrench } from 'lucide-react';
 
 const Skills = () => {
   const [ref, inView] = useInView({
