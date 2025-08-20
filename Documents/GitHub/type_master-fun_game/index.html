@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeMaster - Fun Typing Game</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+   <div class="container">
+        <header class="header">
+            <h1 class="logo">
+                <span class="logo-icon">⌨️</span>
+                TypeMaster
+                 
+            </h1>
+            <div class="header-controls">
+                <button class="btn btn-secondary" id="settingsBtn">
+                    ⚙️  
+                </button>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <!-- Welcome Screen -->
+            <div class="screen active" id="welcomeScreen">
+                <div class="welcome-card">
+                    <h2>Welcome to TypeMaster!</h2>
+                    <p>Test your typing skills with our fun and relaxing typing game.</p>
+                    
+                    <div class="difficulty-selector">
+                        <h3>Choose Difficulty:</h3>
+                        <div class="difficulty-options">
+                            <button class="difficulty-btn active" data-difficulty="easy">
+                                <span class="difficulty-icon">🟢</span>
+                                <span class="difficulty-name">Easy</span>
+                                <span class="difficulty-desc">30 seconds</span>
+                            </button>
+                            <button class="difficulty-btn" data-difficulty="medium">
+                                <span class="difficulty-icon">🟡</span>
+                                <span class="difficulty-name">Medium</span>
+                                <span class="difficulty-desc">25 seconds</span>
+                            </button>
+                            <button class="difficulty-btn" data-difficulty="hard">
+                                <span class="difficulty-icon">🔴</span>
+                                <span class="difficulty-name">Hard</span>
+                                <span class="difficulty-desc">20 seconds</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-large" id="startGameBtn">
+                        Start Game
+                    </button>
+                </div>
+            </div>
+
+            <!-- Game Screen -->
+            <div class="screen" id="gameScreen">
+                <div class="game-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Score</span>
+                        <span class="stat-value" id="currentScore">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Time</span>
+                        <span class="stat-value" id="timeLeft">40</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Progress</span>
+                        <span class="stat-value" id="progressPercent">0%</span>
+                    </div>
+                </div>
+
+                <div class="timer-bar">
+                    <div class="timer-progress" id="timerProgress"></div>
+                </div>
+
+                <div class="passage-container">
+                    <div class="passage-text" id="passageText"></div>
+                </div>
+
+                <div class="game-controls">
+                    <button class="btn btn-secondary" id="pauseBtn">⏸️ Pause</button>
+                    <button class="btn btn-danger" id="quitBtn">❌ Quit</button>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div class="screen" id="resultsScreen">
+                <div class="results-card">
+                    <div class="results-icon" id="resultsIcon">🎉</div>
+                    <h2 id="resultsTitle">Congratulations!</h2>
+                    <div class="results-stats">
+                        <div class="result-stat">
+                            <span class="result-label">Final Score</span>
+                            <span class="result-value" id="finalScore">0</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="result-label">Accuracy</span>
+                            <span class="result-value" id="accuracy">0%</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="result-label">WPM</span>
+                            <span class="result-value" id="wpm">0</span>
+                        </div>
+                    </div>
+                    <div class="results-actions">
+                        <button class="btn btn-primary" id="playAgainBtn">🔄 Play Again</button>
+                        <button class="btn btn-secondary" id="menuBtn">🏠 Main Menu</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modals -->
+
+        <div class="modal" id="settingsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>⚙️ Settings</h3>
+                    <button class="close-btn" data-modal="settingsModal">×</button>
+                </div>
+                <div class="settings-content">
+                    <div class="setting-item">
+                        <label for="soundToggle">Sound Effects</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="soundToggle" checked>
+                            <span class="toggle-slider"></span>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label for="volumeSlider">Volume</label>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="70" class="volume-slider">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <script src="src/sounds.js"></script>
+    <script src="src/passages.js"></script>
+    <script src="src/confetti.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
