@@ -121,7 +121,7 @@ const Certifications = () => {
   const visibleCerts = certifications.slice(currentIndex * 3, (currentIndex + 1) * 3);
 
   return (
-    <section id="certifications" className="py-20 bg-dark-bg">
+    <section id="certifications" className="py-20 relative nebula-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

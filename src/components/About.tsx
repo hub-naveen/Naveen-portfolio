@@ -10,7 +10,7 @@ const About = () => {
   });
 
   return (
-    <section id="about" className="py-20 bg-dark-bg">
+    <section id="about" className="py-20 relative nebula-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -22,7 +22,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             About <span className="gradient-text">Me</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-neon-purple to-neon-pink mx-auto rounded-full" />
+          <div className="section-divider" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -37,13 +37,15 @@ const About = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="w-80 h-80 rounded-full bg-gradient-to-br from-neon-purple/20 to-neon-pink/20 border border-neon-purple/30 flex items-center justify-center"
+                className="w-80 h-80 rounded-full border border-cosmic-violet/30 flex items-center justify-center"
+                style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.1), rgba(0,180,216,0.05))' }}
               >
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  className="w-64 h-64 rounded-full bg-dark-card border-2 border-neon-purple/50 flex items-center justify-center"
+                  className="w-64 h-64 rounded-full border border-cosmic-violet/40 flex items-center justify-center"
+                  style={{ background: 'var(--space-card)' }}
                 >
-                  <User className="w-32 h-32 text-neon-purple" />
+                  <User className="w-32 h-32 text-cosmic-cyan" />
                 </motion.div>
               </motion.div>
               

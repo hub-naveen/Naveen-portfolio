@@ -38,7 +38,9 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-dark-card/80 backdrop-blur-md border-b border-dark-border' : 'bg-transparent'
+        scrolled
+          ? 'bg-space-navy/90 backdrop-blur-md border-b border-dark-border'
+          : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,11 +64,11 @@ const Navbar = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-300 hover:text-neon-purple transition-colors duration-200 relative group"
+                className="text-slate-300 hover:text-cosmic-cyan transition-colors duration-200 relative group text-sm font-medium"
               >
                 {item.name}
                 <motion.div
-                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-neon-purple group-hover:w-full transition-all duration-300"
+                  className="absolute -bottom-1 left-0 w-0 h-px bg-cosmic-cyan group-hover:w-full transition-all duration-300"
                   whileHover={{ width: '100%' }}
                 />
               </motion.button>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b4d8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e879f9;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main text: NAVEEN -->
+  <text x="150" y="55" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="url(#logoGrad)" filter="url(#glow)" letter-spacing="-1">
+    NAVEEN
+  </text>
+  
+  <!-- Undertext: PORTFOLIO -->
+  <text x="150" y="85" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#e2e8f0" letter-spacing="3">
+    PORTFOLIO
+  </text>
+  
+  <!-- Decorative line under NAVEEN -->
+  <line x1="20" y1="65" x2="280" y2="65" stroke="url(#logoGrad)" stroke-width="2" opacity="0.6"/>
+</svg>
