@@ -139,7 +139,7 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/7naveen",  icon: Linkedin, color: "from-blue-500 to-blue-600" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/1naveen",  icon: Linkedin, color: "from-blue-500 to-blue-600" },
     { name: "GitHub",   url: "https://github.com/hub-naveen",        icon: Github,   color: "from-slate-700 to-slate-900" },
     { name: "Resume",   url: "/resume.pdf",                          icon: Download, color: "from-emerald-500 to-green-600" },
   ];

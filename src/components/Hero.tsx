@@ -146,7 +146,7 @@ const Hero = () => {
               <Github className="h-6 w-6 text-slate-400 hover:text-cosmic-cyan" />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/7naveen"
+              href="https://www.linkedin.com/in/1naveen"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -5 }}

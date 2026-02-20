@@ -14,7 +14,7 @@ const Footer = () => {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/7naveen",
+      url: "https://www.linkedin.com/in/1naveen",
       icon: Linkedin,
       color: "hover:text-blue-400"
     },

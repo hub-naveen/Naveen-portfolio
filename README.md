@@ -135,7 +135,7 @@ Update the content in each component file to match your information:
 ## 📧 Contact Information
 
 - **Email**: itzmenavin07@gmail.com
-- **LinkedIn**: [Naveen K](https://www.linkedin.com/in/7naveen)
+- **LinkedIn**: [Naveen K](https://www.linkedin.com/in/ 1naveen)
 - **GitHub**: [hub-naveen](https://github.com/hub-naveen)
 - **Location**: Chennai, Tamil Nadu
 
